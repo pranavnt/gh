@@ -6,7 +6,7 @@ const PORT = 4567;
 const USERNAME = "pranavnt";
 
 app.get("/:repo", function (req, res) {
-  res.redirect("https://github.com/" + USERNAME + req.params.repo);
+  res.redirect("https://github.com/" + USERNAME + "/" + req.params.repo);
 });
 
 app.listen(PORT, () => console.log(`App listening at port ${PORT}`));
